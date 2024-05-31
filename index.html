@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="logo">
+            <h1>ODIN</h1>
+            </div>
+            <p>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
+        </div>
+        <div class="form-container">
+            <h2>This is not a real online service! You know you need something<br>
+                like this in your life to help you realize your deepest dreams.<br>
+                Sign up now to get started.
+                <br>
+                <br>
+                You <em>know</em> you want to.
+            </h2>
+            <form id="details">
+                <h3>Let's do this!</h3>
+                <div class="form-row">
+                    <label for="fname">FIRST NAME
+                        <input type="text" name="first_name" id="fname">
+                    </label>
+                    <label for="lname">LAST NAME
+                        <input type="text" name="last_name" id="lname">
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="email">EMAIL
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <label for="phone_number">PHONE NUMBER
+                        <input type="tel" name="phone_number" id="phone_number">
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="pwd">PASSWORD
+                        <input type="password" name="password" id="pwd">
+                    </label>
+                    <label for="pwdc">CONFIRM PASSWORD
+                        <input type="password" name="password_confirm" id="pwdc">
+                    </label>
+                </div>
+            </form>
+            <button class="create">Create Account</button>
+            <p>Already have an account? <a href="http://">Log in</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
