@@ -7,7 +7,7 @@
 }
 
 .container { 
-    display: flex;
+    display:flex;
     height:100vh;
 }
 
@@ -33,7 +33,7 @@
     width: 100%;
 }
 
-.hero p, a {
+.hero p, .hero a {
     color: white;
 }
 
@@ -46,42 +46,84 @@
     font-family: "norsebold"
 }
 
-.form-container { 
+#form-container { 
     width: 60%;
     height: 100%;
+    padding: 100px 0;
 }
 
-.form-container h3 {
+#form-container h2 {
     font-size: 1.5rem;
     line-height: 1.3;
     margin: 30px;
 }
 
-.form-container form { 
+#form-container form { 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
 			rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 		padding: 30px;
 		margin-bottom: 30px;
 }
 
-.form-container button, p { 
+#form-container button, #form-container p { 
     margin-left: 30px;
 }
-.form-row label {
-    display: block;
-    margin-bottom: 5px;
+
+#details .form-row {
+    display:flex;
 }
 
-#details {
-    background-color:white;
-    width: 100%;
+#details h2 {
+    margin-bottom: 30px;
 }
 
-
-
-.create {
-    background-color: #596D48;
-    color: white;
-    padding: 1rem;
-    border-radius: 10px;
+.form-row > div {
+    flex:1;
+    padding-right: 20px;
 }
+
+.form-row > div label,
+.form-row > div input {
+	width: 100%;
+	font-family: sans-serif;
+}
+
+.form-row > div label {
+	font-size: 0.8rem;
+}
+
+.form-row > div input {
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	border: 2px solid #e5e7eb;
+	border-radius: 5px;
+}
+
+.form-row > div input:invalid,
+.form-row > div input[type="password"]:invalid {
+	border-color: red;
+}
+
+button {
+	background-color: rgba(89, 109, 72);
+	border: none;
+	color: white;
+	padding: 15px 50px;
+	font-size: 0.9rem;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(89, 109, 72, 0.8);
+}
+
+a {
+	text-decoration: none;
+	color: #596d48;
+	font-weight: bold;
+}
+a:hover {
+		color: rgba(89, 109, 72, 0.8);
+	}

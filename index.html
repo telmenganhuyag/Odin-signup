@@ -16,39 +16,43 @@
             </div>
             <p>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
         </div>
-        <div class="form-container">
+        <div id="form-container">
             <h2>This is not a real online service! You know you need something<br>
-                like this in your life to help you realize your deepest dreams.<br>
+            like this in your life to help you realize your deepest dreams.<br>
                 Sign up now to get started.
-                <br>
-                <br>
-                You <em>know</em> you want to.
             </h2>
+            <h2>You <em>know</em> you want to.</h2>
             <form id="details">
-                <h3>Let's do this!</h3>
+                <h2>Let's do this!</h2>
                 <div class="form-row">
-                    <label for="fname">FIRST NAME
-                        <input type="text" name="first_name" id="fname">
-                    </label>
-                    <label for="lname">LAST NAME
-                        <input type="text" name="last_name" id="lname">
-                    </label>
+                    <div>
+                        <label for="fname">FIRST NAME</label>
+                            <input type="text" name="first_name" id="fname">
+                    </div>
+                    <div>
+                        <label for="lname">LAST NAME</label>
+                            <input type="text" name="last_name" id="lname">
+                    </div>
                 </div>
                 <div class="form-row">
-                    <label for="email">EMAIL
-                        <input type="email" name="email" id="email">
-                    </label>
-                    <label for="phone_number">PHONE NUMBER
-                        <input type="tel" name="phone_number" id="phone_number">
-                    </label>
+                    <div>
+                        <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{4}(\s|-)?[0-9]{3}(\s|-)?[0-9]{4}">
+                    </div>
                 </div>
                 <div class="form-row">
-                    <label for="pwd">PASSWORD
-                        <input type="password" name="password" id="pwd">
-                    </label>
-                    <label for="pwdc">CONFIRM PASSWORD
-                        <input type="password" name="password_confirm" id="pwdc">
-                    </label>
+                    <div>
+                        <label for="pwd">PASSWORD</label>
+                            <input type="password" name="password" id="pwd" minlegth="5" maxlength="20">
+                    </div>
+                    <div>
+                        <label for="pwdc">CONFIRM PASSWORD</label>
+                            <input type="password" name="password_confirm" id="pwdc" minlength="5" maxlength="20">
+                    </div>
                 </div>
             </form>
             <button class="create">Create Account</button>
